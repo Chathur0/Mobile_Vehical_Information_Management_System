@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="265dp"
+        android:hint="Name"
+        android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edit_text_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Mobile"
+        android:inputType="phone"
+        android:layout_below="@id/edit_text_name"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_below="@id/edit_text_mobile"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn_background"
+        android:layout_below="@id/edit_text_password"
+        android:textColor="@color/white"
+        android:layout_marginTop="23dp"
+        android:text="Register" />
+</RelativeLayout>

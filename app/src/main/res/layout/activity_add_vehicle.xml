@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:padding="16dp"
+    >
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_edittext_background"
+    android:padding="16dp">
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textColorHint="@color/black"
+        android:layout_height="40dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:textColor="@color/black"
+        android:hint="Vehicle Number" />
+
+    <Spinner
+        android:id="@+id/spinner_type"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edittext_background"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_description"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textColorHint="@color/black"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:textColor="@color/black"
+        android:hint="Description"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_price_per_day"
+        android:layout_width="match_parent"
+        android:hint="Price per day"
+        android:textStyle="bold"
+        android:textColorHint="@color/black"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:textColor="@color/black"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"/>
+    <EditText
+        android:id="@+id/edit_text_city"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:textColor="@color/black"
+        android:hint="Address" />
+
+    <ImageView
+        android:id="@+id/vehicle_image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/select_image_button"
+        android:layout_width="124dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_btn_background"
+        android:text="Select Image"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_btn_background"
+        android:text="Add Vehicle"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
