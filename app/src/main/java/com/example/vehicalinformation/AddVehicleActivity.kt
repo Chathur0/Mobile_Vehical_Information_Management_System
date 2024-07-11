@@ -42,10 +42,6 @@ class AddVehicleActivity : AppCompatActivity() {
         selectImageButton = findViewById(R.id.select_image_button)
         databaseHelper = DatabaseHelper(this)
 
-//        val types = arrayOf("Car", "Van", "Lorry", "Bus")
-//        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, types)
-//        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-//        typeSpinner.adapter = adapter
         val spinner: Spinner = typeSpinner
         val adapter = ArrayAdapter.createFromResource(
             this,

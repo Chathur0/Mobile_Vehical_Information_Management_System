@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login_background"
@@ -12,9 +13,10 @@
         android:layout_alignParentTop="true"
         android:background="@drawable/rounded_edittext_background"
         android:layout_marginTop="273dp"
-        android:paddingLeft="10dp"
-        android:hint="Mobile"
-        android:inputType="phone" />
+        android:paddingStart="10dp"
+        android:hint="@string/mobile"
+        android:inputType="phone"
+        tools:ignore="RtlSymmetry" />
 
     <EditText
         android:id="@+id/edit_text_password"
@@ -23,9 +25,10 @@
         android:layout_below="@id/edit_text_mobile"
         android:layout_marginTop="12dp"
         android:background="@drawable/rounded_edittext_background"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
-        android:paddingLeft="10dp" />
+        android:paddingStart="10dp"
+        tools:ignore="RtlSymmetry" />
 
     <Button
         android:id="@+id/button_login"
@@ -36,18 +39,18 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_marginTop="14dp"
-        android:text="Login" />
+        android:text="@string/login" />
 
     <TextView
-        android:layout_width="155dp"
-        android:layout_height="18dp"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/button_register"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="120dp"
-        android:layout_marginEnd="120dp"
-        android:layout_marginBottom="16dp"
-        android:text="Don't have account?"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/don_t_have_account"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textStyle="bold" />
@@ -63,7 +66,7 @@
         android:layout_marginEnd="113dp"
         android:layout_marginBottom="12dp"
         android:background="@drawable/rounded_btn_background"
-        android:text="Register"
+        android:text="@string/register"
         android:textColor="@color/white"
         android:textStyle="bold" />
 </RelativeLayout>

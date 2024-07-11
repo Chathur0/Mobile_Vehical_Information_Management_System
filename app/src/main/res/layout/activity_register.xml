@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="265dp"
-        android:hint="Name"
+        android:hint="@string/name"
         android:textStyle="bold"
         android:textColorHint="@color/white"
         android:textColor="@color/white"
@@ -24,7 +24,7 @@
         android:textStyle="bold"
         android:textColorHint="@color/white"
         android:textColor="@color/white"
-        android:hint="Mobile"
+        android:hint="@string/mobile"
         android:inputType="phone"
         android:layout_below="@id/edit_text_name"
         android:layout_marginTop="16dp"/>
@@ -33,7 +33,7 @@
         android:id="@+id/edit_text_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:textStyle="bold"
         android:textColorHint="@color/white"
@@ -49,5 +49,5 @@
         android:layout_below="@id/edit_text_password"
         android:textColor="@color/white"
         android:layout_marginTop="23dp"
-        android:text="Register" />
+        android:text="@string/password" />
 </RelativeLayout>

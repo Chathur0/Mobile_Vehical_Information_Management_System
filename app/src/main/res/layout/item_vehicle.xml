@@ -22,7 +22,7 @@
         android:layout_marginStart="20dp"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:text="Vehicle Number"
+        android:text="@string/vehicle_number"
         android:textSize="20sp" />
 
     <TextView
@@ -33,14 +33,14 @@
         android:layout_marginStart="20dp"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:text="Vehicle Type"
+        android:text="@string/vehicle_type"
         android:textSize="15sp" />
 
     <TextView
         android:id="@+id/vehicle_description_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Description:"
+        android:text="@string/description1"
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
         android:textColor="@color/black"
@@ -87,7 +87,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/rounded_btn_background"
-        android:text="Location"
+        android:text="@string/location"
         android:textColor="@color/white"
         android:textSize="15sp"
         android:textStyle="bold" />
@@ -102,21 +102,21 @@
             android:id="@+id/edit_button"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
-            android:contentDescription="Edit"
+            android:contentDescription="@string/edit"
             android:src="@android:drawable/ic_menu_edit"
             android:layout_weight="1"
             android:background="@drawable/rounded_btn_background"
             android:layout_marginEnd="8dp"
-            android:visibility="visible"/> <!-- Hide by default -->
+            android:visibility="visible"/>
 
         <ImageButton
             android:id="@+id/delete_button"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
-            android:contentDescription="Delete"
+            android:contentDescription="@string/delete"
             android:src="@android:drawable/ic_menu_delete"
             android:background="@drawable/rounded_btn_background"
             android:layout_weight="1"
-            android:visibility="visible"/> <!-- Hide by default -->
+            android:visibility="visible"/>
     </LinearLayout>
 </LinearLayout>

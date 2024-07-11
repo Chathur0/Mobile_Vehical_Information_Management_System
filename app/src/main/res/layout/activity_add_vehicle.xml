@@ -10,7 +10,7 @@
     >
     <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@drawable/rounded_edittext_background"
     android:padding="16dp">
@@ -18,12 +18,13 @@
         android:id="@+id/edit_text_name"
         android:layout_width="match_parent"
         android:textStyle="bold"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/gray"
         android:layout_height="40dp"
         android:paddingStart="10dp"
         android:background="@drawable/rounded_edittext_background"
         android:textColor="@color/black"
-        android:hint="Vehicle Number" />
+        android:hint="@string/vehicle_number"
+        tools:ignore="RtlSymmetry" />
 
     <Spinner
         android:id="@+id/spinner_type"
@@ -37,20 +38,21 @@
         android:id="@+id/edit_text_description"
         android:layout_width="match_parent"
         android:textStyle="bold"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/gray"
         android:layout_height="40dp"
-        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
         android:background="@drawable/rounded_edittext_background"
         android:textColor="@color/black"
-        android:hint="Description"
-        android:layout_marginTop="16dp"/>
+        android:hint="@string/description"
+        android:layout_marginTop="16dp"
+        tools:ignore="RtlSymmetry" />
 
     <EditText
         android:id="@+id/edit_text_price_per_day"
         android:layout_width="match_parent"
-        android:hint="Price per day"
+        android:hint="@string/price_per_day"
         android:textStyle="bold"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/gray"
         android:layout_height="40dp"
         android:paddingLeft="10dp"
         android:background="@drawable/rounded_edittext_background"
@@ -61,13 +63,14 @@
         android:id="@+id/edit_text_city"
         android:layout_width="match_parent"
         android:textStyle="bold"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/gray"
         android:layout_marginTop="16dp"
         android:layout_height="40dp"
-        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
         android:background="@drawable/rounded_edittext_background"
         android:textColor="@color/black"
-        android:hint="Address" />
+        android:hint="@string/address"
+        tools:ignore="RtlSymmetry" />
 
     <ImageView
         android:id="@+id/vehicle_image"
@@ -82,7 +85,7 @@
         android:layout_width="124dp"
         android:layout_height="40dp"
         android:background="@drawable/rounded_btn_background"
-        android:text="Select Image"
+        android:text="@string/select_image"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_marginTop="16dp"/>
@@ -93,7 +96,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/rounded_btn_background"
-        android:text="Add Vehicle"
+        android:text="@string/add_vehicle"
         android:textColor="@color/white"
         android:textStyle="bold" />
     </LinearLayout>
